@@ -19,10 +19,9 @@ def main():
     step_2 = amount_paid * (bill_cycle - date_payment)
     step_3 = step_1 - step_2
     step_4 = step_3 / bill_cycle
-    step_5 = ((annual_interest/100) / 12) * step_4
+    step_5 = ((annual_interest / 100) / 12) * step_4
     print(round(step_5, 2))
 
 
-
-
-
+if __name__ == '__main__':
+    main()
