@@ -13,7 +13,7 @@ def average():
     average = acc/total
     print("Average grade =", average)
 
-def tip_jar():
+#def tip_jar():
     acc = 0
     for i in range(5):
         tip = eval(input("enter tip amount"))
@@ -21,7 +21,7 @@ def tip_jar():
     total = acc
     print("total tip amount =", total)
 
-def newton():
+#def newton():
     number = eval(input("enter a number"))
     refines = eval(input("enter number of runs"))
     acc = 0
@@ -31,13 +31,13 @@ def newton():
     print(approx)
 
 
-def sequence():
+#def sequence():
     num = eval(input("enter the number of terms"))
     for i in range(1, num + 1):
         sq = 1 + (i//2 *2)
         print(sq)
 
-def pi():
+#def pi():
     term = eval(input("enter the number of terms"))
     acc = 1
     for i in range(term):
@@ -46,3 +46,4 @@ def pi():
         frac = nu/dem
         acc = acc * frac
     print(acc)
+
