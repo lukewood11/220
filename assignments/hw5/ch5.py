@@ -34,7 +34,7 @@ def main():
     message.draw(win)
     arrow = Image(Point(150, 550), "arrow.gif")
     arrow.draw(win)
-    for i in range(60):
+    for i in range(50):
         arrow.move(5, 1)
         time.sleep(0.1)
     message2 = Text(Point(400, 200), "Click anywhere to close")
