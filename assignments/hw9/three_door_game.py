@@ -23,11 +23,11 @@ def main():
     bottom_text.draw(win)
 
     button_list = [button1, button2, button3]
-    random_button = randint(0, 2)
+    random_button = randint(0, 3)
 
     click = win.getMouse()
 
-    for i in range(len(button_list)):
+    for i in range(3):
         if button_list[i].is_clicked(click):
             if i == random_button:
                 button_list[i].color_button("green")

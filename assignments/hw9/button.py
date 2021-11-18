@@ -1,4 +1,4 @@
-from graphics import *
+from graphics import Text
 
 
 class Button:
@@ -9,15 +9,15 @@ class Button:
         self.label = label
 
     def get_label(self):
-        return self.get_label().getText()
+        return self.text.getText()
 
-    def undraw(self, label):
+    def undraw(self):
         self.text.undraw()
         self.shape.undraw()
 
     def is_clicked(self, point):
-        if (self.shape.getP1().getX() <= point.getX() <= self.shape.getP2().getX()) and (
-                self.shape.getP1().getY() <= point.getY() <= self.shape.getP2().getX()):
+        if (self.shape.getP1().getX() <= point.getX() <= self.shape.getP2().getX() and
+                self.shape.getP1().getY() <= point.getY() <= self.shape.getP2().getY()):
             return True
         else:
             return False
