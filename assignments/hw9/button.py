@@ -19,8 +19,8 @@ class Button:
         if (self.shape.getP1().getX() <= point.getX() <= self.shape.getP2().getX() and
                 self.shape.getP1().getY() <= point.getY() <= self.shape.getP2().getY()):
             return True
-        else:
-            return False
+
+        return False
 
     def color_button(self, color):
         self.shape.setFill(color)
