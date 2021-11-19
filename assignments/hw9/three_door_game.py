@@ -7,7 +7,6 @@ Certification of Authenticity:
 I certify that this assignment is entirely my own work.
 """
 
-
 from random import randint
 from graphics import GraphWin, Rectangle, Point, Text
 from button import Button
@@ -51,7 +50,7 @@ def main():
             u_lose = Text(Point(200, 100), "you lose!")
             top_text.undraw()
             bottom_text.undraw()
-            close = Text(Point(200, 350), str(random_button.get_label()) + " is my secret door")
+            close = Text(Point(200, 350), random_button.get_label() + " is my secret door")
             close.draw(win)
             u_lose.draw(win)
 
@@ -60,17 +59,18 @@ def main():
             u_lose = Text(Point(200, 100), "you lose!")
             top_text.undraw()
             bottom_text.undraw()
-            close = Text(Point(200, 350), str(random_button.get_label()) + " is my secret door")
+            close = Text(Point(200, 350), random_button.get_label() + " is my secret door")
             close.draw(win)
             u_lose.draw(win)
 
 
-        elif button3.is_clicked(click):
+        else:
+            button3.is_clicked(click)
             button3.color_button("red")
             u_lose = Text(Point(200, 100), "you lose!")
             top_text.undraw()
             bottom_text.undraw()
-            close = Text(Point(200, 350), str(random_button.get_label()) + " is my secret door")
+            close = Text(Point(200, 350), random_button.get_label() + " is my secret door")
             close.draw(win)
             u_lose.draw(win)
 
