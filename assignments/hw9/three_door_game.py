@@ -51,7 +51,7 @@ def main():
             u_lose = Text(Point(200, 100), "you lose!")
             top_text.undraw()
             bottom_text.undraw()
-            close = Text(Point(200, 350), "Door" + str(random_button) + "is my secret door")
+            close = Text(Point(200, 350), str(random_button.get_label()) + " is my secret door")
             close.draw(win)
             u_lose.draw(win)
 
@@ -60,7 +60,7 @@ def main():
             u_lose = Text(Point(200, 100), "you lose!")
             top_text.undraw()
             bottom_text.undraw()
-            close = Text(Point(200, 350), "Door" + str(random_button) + "is my secret door")
+            close = Text(Point(200, 350), str(random_button.get_label()) + " is my secret door")
             close.draw(win)
             u_lose.draw(win)
 
@@ -70,7 +70,7 @@ def main():
             u_lose = Text(Point(200, 100), "you lose!")
             top_text.undraw()
             bottom_text.undraw()
-            close = Text(Point(200, 350), "Door" + str(random_button) + "is my secret door")
+            close = Text(Point(200, 350), str(random_button.get_label()) + " is my secret door")
             close.draw(win)
             u_lose.draw(win)
 
