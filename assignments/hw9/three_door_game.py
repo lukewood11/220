@@ -1,8 +1,16 @@
+"""
+Name: Luke Wood
+
+three_door_game.py
+
+Certification of Authenticity:
+I certify that this assignment is entirely my own work.
+"""
+
+
 from random import randint
 from graphics import GraphWin, Rectangle, Point, Text
 from button import Button
-
-
 
 
 def main():
@@ -40,10 +48,10 @@ def main():
     else:
         if button1.is_clicked(click):
             button1.color_button("red")
-            u_lose = Text(Point(200,100), "you lose!")
+            u_lose = Text(Point(200, 100), "you lose!")
             top_text.undraw()
             bottom_text.undraw()
-            close = Text(Point(200, 350), "Door" + random_button + "is my secret door")
+            close = Text(Point(200, 350), "Door" + str(random_button) + "is my secret door")
             close.draw(win)
             u_lose.draw(win)
 
@@ -52,20 +60,23 @@ def main():
             u_lose = Text(Point(200, 100), "you lose!")
             top_text.undraw()
             bottom_text.undraw()
-            close = Text(Point(200, 350), "Door" + random_button + "is my secret door")
+            close = Text(Point(200, 350), "Door" + str(random_button) + "is my secret door")
+            close.draw(win)
             u_lose.draw(win)
+
 
         elif button3.is_clicked(click):
             button3.color_button("red")
             u_lose = Text(Point(200, 100), "you lose!")
             top_text.undraw()
             bottom_text.undraw()
-            close = Text(Point(200, 350), "Door" + random_button + "is my secret door")
+            close = Text(Point(200, 350), "Door" + str(random_button) + "is my secret door")
             close.draw(win)
             u_lose.draw(win)
 
     win.getMouse()
     win.close()
+
 
 if __name__ == "__main__":
     main()
