@@ -67,8 +67,8 @@ def hi_lo_game():
 
 def main():
     # add other function calls here
-    #good_input()
-    #num_digits()
+    good_input()
+    num_digits()
     hi_lo_game()
     pass
 
