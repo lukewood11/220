@@ -197,7 +197,7 @@ def sales_force_test():
 
     def add_data_test(file):
         sf = SalesForce()
-        sf.add_data(file)
+        add_data(file)
         return sf
 
     outcome, result = run_safe(lambda: add_data_test(file_name))
