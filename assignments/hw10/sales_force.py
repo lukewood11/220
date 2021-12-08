@@ -21,7 +21,8 @@ class SalesForce:
             emp_id = t_list[0]
             name = t_list[1].strip()
             data = t_list[2].strip()
-            data = (data.split(" "))
+            data.replace('\n', '')
+            data = data.split(" ")
             data = [float(x) for x in data]
             worker = SalesPerson(emp_id, name)
             for i in data:
