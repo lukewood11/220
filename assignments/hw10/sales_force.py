@@ -34,8 +34,8 @@ class SalesForce:
             id = person.get_id()
             name = person.get_name()
             sales = person.total_sales()
-            quota = person.met_quota(quota)
-            list = [id, name, sales, quota]
+            s_quota = person.met_quota(quota)
+            list = [id, name, sales, s_quota]
             q_report.append(list)
         return q_report
 
